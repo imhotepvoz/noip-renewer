@@ -206,7 +206,7 @@ if __name__ == "__main__":
                     CODE_METHOD = "app"
                 except NoSuchElementException:
                     exit_with_error(message="2FA/Email code input not found. Exiting.")
-            #
+            
             # Account has email verification code
             if CODE_METHOD == "email":
                 otp_code = str(input("Enter OTP code: ")).replace("\n", "")
